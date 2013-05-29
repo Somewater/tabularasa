@@ -2,31 +2,27 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: true
-  database: himholod
+  database: Tabularasa
   pool: 5
-  username: himholod
-  password: dSL8GtsrSJr
-  #socket: /var/run/mysqld/mysqld.sock
+  username: user
+  password: hello
   host: 127.0.0.1
 
 test:
   adapter: mysql2
   encoding: utf8
   reconnect: true
-  database: himholod_test
+  database: Tabularasa_test
   pool: 5
-  username: himholod
-  password: dSL8GtsrSJr
-  #socket: /var/run/mysqld/mysqld.sock
+  username: user
+  password: hello
   host: 127.0.0.1
 
 production:
   adapter: mysql2
   encoding: utf8
   reconnect: true
-  database: himholod
+  database: Tabularasa
   pool: 5
-  username: himholod
-  password: dSL8GtsrSJr
-  #socket: /var/run/mysqld/mysqld.sock
+  username: user
   host: 127.0.0.1

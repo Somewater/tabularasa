@@ -1,4 +1,4 @@
-Himholod::Application.routes.draw do
+Tabularasa::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
   devise_for :admin_users
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
