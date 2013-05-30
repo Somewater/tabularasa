@@ -1,14 +1,34 @@
-ru:
-  hello: "Hello world"
-  email: naidenova_marina@rambler.ru
-  email_url: 'mailto:naidenova_marina@rambler.ru?subject=%D0%A7%D0%B5%D1%80%D1%82%D0%B5%D0%B6%D0%B8+%D0%B2+Autocad'
-  phone: тел. 8(963) 604-87-38
-  copyright: © 2012 autocad-help.ru
+﻿ru:
   search:
     button: Поиск
-    site_search: Поиск по сайту
+    site_search: "Поиск по сайту:"
     hint: "поиск..."
     empty_request: Слишком короткий запрос, введите слово, длиной не менее 3 символов
     more_word_request: Слишком длинный запрос, ограничьте поисковую фразу 2-3 словами
     empty_result: Ничего не найдено. Попробуйте изменить параметры поиска
     huge_result: Запросу удовлетворяет большая часть материалов сайта, попробуйте сузить параметры поиска
+    types:
+      pages: Страницы
+      news: Новости
+      files: Файлы
+  feedback_form:
+    title: Форма обратной связи
+    submit: Послать
+    name_label: Ваше имя
+    email_label: Email
+    name_error: Введите ваше имя
+    email_error: Введите ваш email
+    body_error: Введите текст сообщения
+    success_notice: Ваше сообщение успешно отправлено
+  errors:
+    root_section_has_parent: Главный раздел сайта не должен иметь родительский раздел
+    section_has_not_parent: В разделе должен быть задан родительский раздел
+    section_parent_infinity_loop: "Циклические связи между разделами: %{message}"
+  admin:
+    actions:
+      stat_panel:
+        title: Сохранить БД
+        menu: Сохранить БД
+        breadcrumb: Сохранить БД
+        database_dump: Загрузить копию базы данных
+  sitemap: Карта сайта

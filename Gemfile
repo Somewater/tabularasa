@@ -31,3 +31,6 @@ gem 'dynamic_sitemaps', "1.0.5"
 gem 'httparty', '0.8.1'
 gem "devise", "2.1"
 #gem 'globalize3', "0.2.0"
+gem 'traco', '1.1.0'
+gem 'ferret', :platform => :ruby
+gem 'acts_as_ferret', '>= 0.5', :platform => :ruby

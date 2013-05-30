@@ -49,11 +49,13 @@ class CreateBaseStructure < ActiveRecord::Migration
 
 	  create_table "sections", :force => true do |t|
 		t.string   "name",                         :null => false
-		t.string   "title",                        :null => false
+    t.string   "title_ru"
+    t.string   "title_en"
 		t.integer  "weight",     :default => 0
 		t.datetime "created_at",                   :null => false
 		t.datetime "updated_at",                   :null => false
 		t.boolean  "visible",    :default => true
+		t.integer  "parent_id",  :default => 0
 	  end
 
 	  add_index "sections", ["name"], :name => "index_sections_on_name", :unique => true
@@ -65,6 +67,10 @@ class CreateBaseStructure < ActiveRecord::Migration
 		t.integer  "section_id"
 		t.datetime "created_at", :null => false
 		t.datetime "updated_at", :null => false
+    t.string   "title_ru"
+    t.string   "title_en"
+    t.text     "body_ru",    :limit => 16777215
+    t.text     "body_en",    :limit => 16777215      
 	  end
 
 	  add_index "text_pages", ["name"], :name => "index_text_pages_on_name", :unique => true

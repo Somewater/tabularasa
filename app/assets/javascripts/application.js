@@ -12,5 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require ./fancybox/jquery.fancybox
 //= require ./bootstrap/bootstrap
+//= #require_tree .
+
+// MENU SCRIPT

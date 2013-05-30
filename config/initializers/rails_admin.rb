@@ -145,10 +145,31 @@ RailsAdmin.config do |config|
   RailsAdmin.config do |config|
     config.models do
       edit do
-        fields_of_type :text do
-          ckeditor true
+        fields_of_type :text do |f|
+          ckeditor true unless f.name.match(/^description/)
         end
       end
+    end
+    config.model Section do
+      object_label_method :hierarchy_name
+    end
+    config.actions do
+      # root actions
+      dashboard                     # mandatory
+                                    # collection actions
+      index                         # mandatory
+      new
+      export
+      history_index
+      bulk_delete
+                                    # member actions
+      show
+      edit
+      delete
+      history_show
+      show_in_app
+
+      stat_panel
     end
   end
 
