@@ -8,23 +8,23 @@
 </head>
 <body>
 <div class="container">
-	<% unless notice.blank? %>
-		<div class="alert alert-success">
-			<a class="close" data-dismiss="alert">?</a>
-			<span><%= notice %></span>
-		</div>
-	<% end %>
+    <% unless notice.blank? %>
+        <div class="alert alert-success">
+            <a class="close" data-dismiss="alert">?</a>
+            <span><%= notice %></span>
+        </div>
+    <% end %>
 
-	<% unless alert.blank? %>
-		<div class="alert alert-danger">
-			<a class="close" data-dismiss="alert">?</a>
-			<span><%= alert %></span>
-		</div>
-	<% end %>
+    <% unless alert.blank? %>
+        <div class="alert alert-danger">
+            <a class="close" data-dismiss="alert">?</a>
+            <span><%= alert %></span>
+        </div>
+    <% end %>
 
-	<div id="page" class="row">
-		 <%= yield %>
-	</div>
+    <div id="page" class="row">
+         <%= yield %>
+    </div>
 </div>
 </body>
 </html>
