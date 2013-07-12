@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
+gem 'rack', '~> 1.4.5'
 gem 'rails', '3.2.13'
 
-gem 'mysql2', '~> 0.3.11'
+gem 'pg'
+gem 'thin'
 
 
 # Gems used only for assets and not required

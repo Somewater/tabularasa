@@ -1,28 +1,26 @@
 development:
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   reconnect: true
   database: Tabularasa
   pool: 5
   username: user
   password: hello
-  host: 127.0.0.1
 
 test:
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   reconnect: true
   database: Tabularasa_test
   pool: 5
   username: user
   password: hello
-  host: 127.0.0.1
 
 production:
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   reconnect: true
   database: Tabularasa
   pool: 5
   username: user
-  host: 127.0.0.1
+  password: hello
