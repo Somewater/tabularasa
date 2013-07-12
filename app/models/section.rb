@@ -35,7 +35,7 @@ class Section < ActiveRecord::Base
     end
   end
   validates_with SectinsValidator
-  validates :name, :presence => true, :format => /^[a-z][a-z0-9\-]+$/ , :unless => :main?
+  validates :name, :presence => true, :format => /^[a-z][a-z0-9\-\_]+$/ , :unless => :main?
 
   def self.main
     self.find_by_name(MAIN_NAME)
