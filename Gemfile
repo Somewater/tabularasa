@@ -19,7 +19,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'rails_admin', "0.3.0"
+gem 'rails_admin', "0.4.9"
 gem "ckeditor"
 gem "paperclip"
 gem 'dynamic_sitemaps', "1.0.5"
