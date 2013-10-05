@@ -143,8 +143,8 @@ RailsAdmin.config do |config|
   # end
 
   RailsAdmin.config do |config|
-    config.models do
-      edit do
+    config.models.each do |m|
+      m.edit do
         fields_of_type :text do |f|
           ckeditor true unless f.name.match(/^description/)
         end
