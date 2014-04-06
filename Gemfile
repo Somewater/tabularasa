@@ -21,7 +21,7 @@ end
 
 gem 'rails_admin', "0.4.9"
 gem "ckeditor"
-gem "paperclip"
+gem "paperclip", "3.4.2"
 gem 'dynamic_sitemaps', "1.0.5"
 
 # Deploy with Capistrano
