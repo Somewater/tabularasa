@@ -146,12 +146,25 @@ RailsAdmin.config do |config|
     config.models.each do |m|
       m.edit do
         fields_of_type :text do |f|
-          ckeditor true unless f.name.match(/^description/)
+          ckeditor true
         end
       end
     end
     config.model Section do
       object_label_method :hierarchy_name
+      exclude_fields do |field_name|
+        field_name.name.to_s.end_with? '_en'
+      end
+    end
+    config.model TextPage do
+      exclude_fields do |field_name|
+        field_name.name.to_s.end_with? '_en'
+      end
+    end
+    config.model Product do
+      exclude_fields do |field_name|
+        field_name.name.to_s.end_with? '_en'
+      end
     end
     config.actions do
       # root actions

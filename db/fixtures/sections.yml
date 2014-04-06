@@ -1,0 +1,48 @@
+main:
+  parent_id: 0
+  name: main
+  title_en: Main
+  title_ru: Главная
+
+herbs:
+  parent: main
+  name: herbs
+  weight: 10
+  title_en: Herbs
+  title_ru: Травы
+
+medical_sets:
+  parent: herbs
+  name: medical_sets
+  weight: -100
+  title_ru: Лечебные сборы
+
+medical_herbs:
+  parent: herbs
+  name: medical_herbs
+  weight: -80
+  title_ru: Лечебные травы
+
+diet_products:
+  parent: herbs
+  name: diet_products
+  weight: -60
+  title_ru: Диетические продукты
+
+herbal_tea:
+  parent: herbs
+  name: herbal_tea
+  weight: -40
+  title_ru: Чаи на травах
+
+medical_balms:
+  parent: herbs
+  name: medical_balms
+  weight: -20
+  title_ru: Лечебные бальзамы
+
+other_production:
+  parent: herbs
+  name: other_production
+  weight: -5
+  title_ru: Прочая продукция

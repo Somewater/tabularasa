@@ -19,6 +19,10 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :development do
+  gem 'pry'
+end
+
 gem 'rails_admin', "0.4.9"
 gem "ckeditor"
 gem "paperclip", "3.4.2"

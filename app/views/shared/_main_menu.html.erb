@@ -1,0 +1,33 @@
+<div class="navbar">
+    <%= image_tag 'design/logo.jpg' %>
+    <div class="navbar-inner" style="margin-left: 200px; margin-top: -50px;">
+        <ul class="nav">
+            <% [:main, :about, :contacts].each do |page| %>
+                <% if page == :main %>
+                    <% if request.path == '/' %>
+                        <li class="active"><a href="#">Главная</a></li>
+                    <% else %>
+                        <li><a href="/">Главная</a></li>
+                    <% end %>
+                <% else %>
+                    <% if defined?(@page) && @page && @page.name == page.to_s %>
+                        <li class="active"><a href="#"><%= @page.title %></a></li>
+                    <% else %>
+                        <li><a href="<%= text_page_path page %>"><%= TextPage.find_by_name(page).title %></a></li>
+                    <% end %>
+                <% end %>
+            <% end %>
+        </ul>
+    </div>
+</div>
+<% unless @page %>
+    <ul class="nav nav-pills">
+        <% Section.find_by_name('herbs').children.each do |section| %>
+            <% if defined?(@section) && section.id == @section.id %>
+                <li class="active"><a href="<%= section_path section %>"><%= section.title %></a></li>
+            <% else %>
+                <li><a href="<%= section_path section %>"><%= section.title %></a></li>
+            <% end %>
+        <% end %>
+    </ul>
+<% end %>

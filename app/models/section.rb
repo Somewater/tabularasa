@@ -11,6 +11,7 @@ class Section < ActiveRecord::Base
   belongs_to :parent, :class_name => 'Section'
   has_many :children, :class_name => 'Section', :foreign_key => 'parent_id', :order => Section::ORDER, :conditions => CONDITIONS
   has_many :text_pages
+  has_many :products
 
   #validates :parent, :presence =>  { :unless => :main? }, :if => :not_infinity_loop?
   class SectinsValidator < ActiveModel::Validator

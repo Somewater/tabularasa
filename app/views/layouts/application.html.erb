@@ -23,7 +23,15 @@
     <% end %>
 
     <div id="page" class="row">
-         <%= yield %>
+        <div class="span12">
+            <%= render 'shared/main_menu' %>
+        </div>
+        <div class="span12">
+            <%= yield %>
+        </div>
+        <div class="span12 well" style="margin-top: 50px;">
+            &copy; 2010-2013 Интернет магазин "Травы Кубани и Алтая"
+        </div>
     </div>
 </div>
 </body>
