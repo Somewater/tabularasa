@@ -2,25 +2,25 @@ development:
   adapter: postgresql
   encoding: utf8
   reconnect: true
-  database: Tabularasa
+  database: herbs_development
   pool: 5
-  username: user
-  password: hello
+  username: herbs
+  password: hd03J8glsJnmDl4DFD
 
 test:
   adapter: postgresql
   encoding: utf8
   reconnect: true
-  database: Tabularasa_test
+  database: herbs_test
   pool: 5
-  username: user
-  password: hello
+  username: herbs
+  password: hd03J8glsJnmDl4DFD
 
 production:
   adapter: postgresql
   encoding: utf8
   reconnect: true
-  database: Tabularasa
+  database: herbs_production
   pool: 5
-  username: user
-  password: hello
+  username: herbs
+  password: hd03J8glsJnmDl4DFD
