@@ -1,4 +1,3 @@
 User-Agent: *
 Disallow: /search/
 Disallow: /admin/
-Sitemap: http://Tabularasa/sitemap.xml

@@ -6,7 +6,7 @@
 require File.expand_path('../config/application', __FILE__)
 
 
-Tabularasa::Application.load_tasks
+Herbs::Application.load_tasks
 
 desc "rebuild search index"
 task :search => :environment do
